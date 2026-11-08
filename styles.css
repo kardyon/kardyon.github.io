@@ -46,3 +46,14 @@
   .leader-photo{right:20px;top:56px;width:54px;height:68px}
 }
 @media(max-width:650px){.nav-menu:hover .nav-submenu:not(.is-open),.nav-menu:focus-within .nav-submenu:not(.is-open){display:none}}
+
+/* Lead with the CEO profile before the founder and adviser profiles */
+.leadership-feature{display:grid;grid-template-columns:1fr 185px;gap:35px;align-items:center;background:var(--dark);color:#fff;margin:0 0 48px;padding:27px 34px;min-height:260px}
+.leadership-feature .leader-photo{position:static;grid-column:2;grid-row:1;width:150px;height:205px;justify-self:center;object-fit:cover;object-position:center top;border-radius:2px}
+.leadership-copy{grid-column:1;grid-row:1}
+.leadership-copy .team-label{border-color:#385357;color:#c4d6ce}
+.leadership-copy .person-role{color:var(--lime)!important;margin:23px 0 5px!important}
+.leadership-copy h3{font:600 clamp(26px,3.2vw,38px)/1.15 var(--display);letter-spacing:-.04em;margin:0 0 10px}
+.leadership-copy>p:last-child{font-size:12px;line-height:1.8;color:#c3d0ca;max-width:620px;margin:0}
+.team-bottom{display:block}
+@media(max-width:650px){.leadership-feature{grid-template-columns:76px 1fr;gap:14px;margin-bottom:34px;padding:17px 14px;min-height:0}.leadership-feature .leader-photo{grid-column:1;grid-row:1;width:72px;height:108px;align-self:start}.leadership-copy{grid-column:2;grid-row:1}.leadership-copy .team-label{font-size:7px;gap:8px}.leadership-copy .team-label span:last-child{text-align:right}.leadership-copy .person-role{font-size:7px!important;margin:16px 0 4px!important}.leadership-copy h3{font-size:20px}.leadership-copy>p:last-child{font-size:10px;line-height:1.65}}

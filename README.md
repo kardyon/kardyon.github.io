@@ -26,3 +26,4 @@ Open `index.html` in a browser, or serve this directory with any local static se
 - `index.html` — site content and structure
 - `styles.css` — responsive design
 - `script.js` — mobile navigation, current year, and mailto contact form
+- `assets/home.jpg` — home-page research pathway figure

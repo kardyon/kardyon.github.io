@@ -1,13 +1,26 @@
 const menuButton = document.querySelector('.menu-toggle');
 const nav = document.querySelector('#primary-nav');
+const submenuButton = document.querySelector('.submenu-toggle');
+const submenu = document.querySelector('#mission-submenu');
 menuButton.addEventListener('click', () => {
   const open = menuButton.getAttribute('aria-expanded') === 'true';
   menuButton.setAttribute('aria-expanded', String(!open));
   menuButton.setAttribute('aria-label', open ? 'Open navigation' : 'Close navigation');
   nav.classList.toggle('is-open', !open);
+  if (open) {
+    submenuButton.setAttribute('aria-expanded', 'false');
+    submenu.classList.remove('is-open');
+  }
+});
+submenuButton.addEventListener('click', () => {
+  const open = submenuButton.getAttribute('aria-expanded') === 'true';
+  submenuButton.setAttribute('aria-expanded', String(!open));
+  submenu.classList.toggle('is-open', !open);
 });
 nav.addEventListener('click', (event) => {
   if (event.target.closest('a')) {
+    submenuButton.setAttribute('aria-expanded', 'false');
+    submenu.classList.remove('is-open');
     menuButton.setAttribute('aria-expanded', 'false');
     menuButton.setAttribute('aria-label', 'Open navigation');
     nav.classList.remove('is-open');

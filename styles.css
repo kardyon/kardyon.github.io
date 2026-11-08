@@ -2,3 +2,47 @@
 @media(max-width:900px){.section-wrap{width:calc(100% - 56px)}.site-header{padding:0 28px}.primary-nav{gap:20px}.hero{min-height:620px;grid-template-columns:1fr .78fr}.hero-art{transform:scale(.86);transform-origin:center right;margin-right:-34px}.intro-grid{grid-template-columns:.55fr 1.45fr;gap:25px}.intro-aside{display:none}.mission-grid,.science-top,.pipeline-heading,.people-heading,.news-content{gap:45px}.program-card{grid-template-columns:.16fr 1fr .33fr;gap:22px}.program-visual{height:150px}.team-bottom{gap:30px}.contact-inner{gap:48px}.science-card{padding:22px 20px}}
 @media(max-width:650px){html{scroll-padding-top:72px}.section-wrap{width:calc(100% - 40px)}.site-header{height:70px;padding:0 20px}.brand{font-size:12px}.brand-mark{width:25px;height:25px}.menu-toggle{display:flex;width:42px;height:42px;background:transparent;border:1px solid #cbd5ce;align-items:center;justify-content:center;flex-direction:column;gap:5px}.menu-toggle span{height:1px;width:16px;background:var(--ink);transition:.2s}.menu-toggle[aria-expanded="true"] span:first-child{transform:translateY(3px) rotate(45deg)}.menu-toggle[aria-expanded="true"] span:last-child{transform:translateY(-3px) rotate(-45deg)}.primary-nav{position:absolute;top:69px;left:0;right:0;padding:15px 20px 22px;background:var(--paper);display:none;align-items:stretch;gap:0;border-bottom:1px solid var(--line);box-shadow:0 15px 25px rgba(20,50,42,.08)}.primary-nav.is-open{display:flex;flex-direction:column}.primary-nav a{padding:12px 0;border-bottom:1px solid #e3e8e3}.primary-nav .nav-contact{border:0;padding:12px 0;border-radius:0}.hero{display:flex;flex-direction:column;align-items:stretch;padding-top:58px;padding-bottom:75px;min-height:unset}.hero h1{font-size:clamp(45px,12vw,68px);margin:23px 0 17px}.hero-lede{font-size:14px;max-width:390px}.hero-actions{gap:18px;flex-wrap:wrap;margin-top:26px}.hero-note{margin-top:34px}.hero-art{height:auto;transform:none;margin:26px auto 0;width:100%;max-width:520px}.hero-figure{max-height:none}.art-core{width:150px;height:150px}.art-core svg{width:108px}.orbit-one{width:210px}.orbit-two{width:280px}.orbit-three{width:350px}.art-label{font-size:7px}.label-top{top:10px}.label-bottom{bottom:12px}.label-right{right:-2px}.node-a{top:37px;right:15%}.node-b{left:2%;top:47%}.node-c{bottom:39px;right:22%}.hero-footer{bottom:22px}.intro-band{padding:61px 0 65px}.intro-grid{display:block}.intro-grid h2{font-size:42px;margin-top:28px}.intro-text{font-size:12px;margin-top:20px}.mission-section{padding-top:61px;padding-bottom:65px}.heading-count{font-size:7px;text-align:right;max-width:45%}.mission-grid{display:block;padding-top:31px}.mission-grid h2{font-size:37px}.mission-grid>div{margin-top:23px}.mission-grid p{font-size:12px}.science-section{padding:61px 0 66px}.science-top{display:block;padding:31px 0 30px}.science-top h2{font-size:47px}.science-top p{margin-top:19px;font-size:12px}.science-cards{grid-template-columns:1fr;gap:10px}.science-card{min-height:220px;padding:20px 23px}.science-card-quote{min-height:185px}.science-card h3{margin-top:9px}.pipeline-section{padding-top:62px;padding-bottom:67px}.pipeline-heading{display:block;padding:32px 0 26px}.pipeline-heading h2{font-size:45px}.pipeline-heading>p{margin-top:17px;font-size:11px}.program-card{grid-template-columns:43px 1fr;gap:13px;padding:25px 0}.program-index strong{font-size:24px}.program-main h3{font-size:23px}.program-top{gap:7px;flex-wrap:wrap}.status-pill,.program-tag{font-size:7px}.program-subtitle{font-size:14px!important}.program-main p{font-size:11px}.program-visual{grid-column:2;height:115px;margin-top:6px}.pipeline-note{line-height:1.6}.people-section{padding:62px 0 67px}.people-heading{display:block;padding:32px 0}.people-heading h2{font-size:45px}.people-heading p{margin-top:15px}.founder-grid{grid-template-columns:1fr;gap:27px;padding:22px 0 37px}.person-card{padding-left:66px;min-height:52px}.person-avatar{position:absolute;left:0;top:0;width:48px;height:48px;margin:0}.person-card>p:last-child{max-width:none}.person-card h3{font-size:16px}.team-bottom{grid-template-columns:1fr;gap:30px}.leadership-card{min-height:245px}.news-section{padding:62px 0 68px}.news-content{display:block;padding-top:32px}.news-content h2{font-size:47px}.news-empty{margin-top:26px;padding-left:20px}.contact-section{padding:63px 0 69px}.contact-inner{grid-template-columns:1fr;gap:34px}.contact-left h2{font-size:56px}.contact-left>p:not(.eyebrow){font-size:12px}.contact-types{margin-top:27px}.contact-card{padding:24px 21px}.footer-main{display:grid;grid-template-columns:1fr auto;gap:15px}.footer-main>p{grid-column:1/-1;grid-row:2}.back-top{grid-column:2;grid-row:1}.footer-bottom{flex-wrap:wrap;gap:9px}.footer-bottom span:nth-child(2){display:none}}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;transition:none!important}}
+
+/* Mission dropdown and expanded founder profiles */
+.nav-menu{position:relative;display:flex;align-items:center}
+.nav-menu-main{display:flex;align-items:center;gap:5px}
+.nav-menu-main>a{transition:color .2s}
+.submenu-toggle{border:0;background:transparent;color:var(--ink);font-size:15px;line-height:1;cursor:pointer;padding:4px}
+.nav-submenu{display:none;position:absolute;top:100%;left:-18px;z-index:25;min-width:190px;padding-top:10px;flex-direction:column;gap:0;font-size:12px}
+.nav-submenu a{display:block;background:#fff;padding:10px 13px;border-bottom:1px solid #edf0ec;box-shadow:0 12px 26px rgba(19,48,42,.12)}
+.nav-menu:hover .nav-submenu,.nav-menu:focus-within .nav-submenu{display:flex}
+.nav-menu:hover .submenu-toggle,.nav-menu-main>a:hover{color:var(--green-deep)}
+.founder-grid{grid-template-columns:1fr;gap:15px}
+.founder-profile{display:grid;grid-template-columns:112px 1fr;column-gap:24px;align-content:start;background:#f7f8f5;padding:22px 25px}
+.founder-profile .person-photo{grid-column:1;grid-row:1 / span 6;width:100px;height:125px;object-fit:cover;object-position:center top;border-radius:2px;background:#dde4df}
+.founder-profile .person-role,.founder-profile h3,.founder-profile .expertise-label,.founder-profile ul,.founder-profile .publication-highlight{grid-column:2}
+.founder-profile .person-role{font-size:8px!important;line-height:1.5;letter-spacing:.08em}
+.founder-profile h3{font-size:19px;margin:2px 0 6px}
+.expertise-label{font-size:10px;font-weight:700;color:#536a60;margin:0 0 4px}
+.founder-profile ul{font-size:11px;line-height:1.65;color:#70807a;margin:0;padding-left:17px}
+.founder-profile li{padding-left:2px;margin:1px 0}
+.publication-highlight{background:#e7eee8;padding:13px 15px;margin-top:14px}
+.publication-highlight>span{display:block;font-size:8px;letter-spacing:.13em;color:#4d8f7d;font-weight:700;margin-bottom:6px}
+.publication-highlight p{font-size:10px;line-height:1.65;color:#526762;margin:0}
+.publication-highlight a{font-weight:700;text-decoration:underline;text-decoration-color:#92b5a5;text-underline-offset:2px}
+.publication-highlight small{display:block;margin-top:7px;color:#7b8982;font-size:9px}
+.leader-photo{position:absolute;right:27px;top:58px;width:65px;height:82px;object-fit:cover;object-position:center top;border-radius:2px}
+@media(max-width:900px){.primary-nav{gap:17px}.nav-contact{padding:9px 12px}}
+@media(max-width:650px){
+  .nav-menu{display:block;width:100%;border-bottom:1px solid #e3e8e3}
+  .nav-menu-main{justify-content:space-between}
+  .nav-menu-main>a{padding:12px 0;flex:1}
+  .submenu-toggle{padding:10px 12px}
+  .nav-menu .nav-submenu{display:none;position:static;min-width:0;padding:0 0 7px 12px;box-shadow:none;background:transparent}
+  .nav-menu .nav-submenu.is-open{display:flex}
+  .nav-menu .nav-submenu a{background:transparent;border:0;box-shadow:none;padding:9px 0;color:#526b61;font-size:11px}
+  .founder-profile{grid-template-columns:70px 1fr;column-gap:13px;padding:16px 13px}
+  .founder-profile .person-photo{width:66px;height:86px;grid-row:1 / span 6}
+  .founder-profile .person-role{font-size:7px!important}
+  .founder-profile h3{font-size:16px}
+  .founder-profile ul{font-size:10px}
+  .publication-highlight{padding:10px 11px;margin-top:11px}
+  .publication-highlight p{font-size:9px;overflow-wrap:anywhere}
+  .leader-photo{right:20px;top:56px;width:54px;height:68px}
+}
+@media(max-width:650px){.nav-menu:hover .nav-submenu:not(.is-open),.nav-menu:focus-within .nav-submenu:not(.is-open){display:none}}

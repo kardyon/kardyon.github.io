@@ -19,6 +19,8 @@ Open `index.html` in a browser, or serve this directory with any local static se
 - Add the CEO's name and confirm all affiliations, titles, and bios.
 - Add dated news and complete publication citations when available.
 - Confirm therapeutic program descriptions and any regulatory or clinical-stage statements with the scientific and legal teams.
+- Confirm permission to publish the founder and leadership portraits supplied in the Word documents. The Board of Advisers document did not contain portraits.
+- The Nature article is cited, but no figures from the paper are reproduced. Obtain permission before adding publisher figures.
 - The site loads DM Sans and Manrope from Google Fonts. If you prefer no third-party requests, remove the font links in `index.html`; the CSS includes system fallbacks.
 
 ## Files
@@ -27,3 +29,5 @@ Open `index.html` in a browser, or serve this directory with any local static se
 - `styles.css` — responsive design
 - `script.js` — mobile navigation, current year, and mailto contact form
 - `assets/home.jpg` — home-page research pathway figure
+- `assets/founder-*.{png,jpg}` — scientific founder portraits from the supplied Word file
+- `assets/leadership-ceo.jpg` — leadership portrait from the supplied Word file
